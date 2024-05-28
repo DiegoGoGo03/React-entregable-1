@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+/*_______________________PREDEFINICIONES________________________*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Cabin", sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white
+}
+
+button {
+  cursor: pointer;
+}
+
+/* ___________________________App______________________ */
+.app {
+  min-height: 100vh;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.app__title {
+  margin-top: 30px;
+  width: 300px;
+  text-align: center;
+  text-shadow: -3px -2px 2px rgb(34, 34, 34),
+                1px 1px 1px rgb(34, 34, 34),
+                -1px 1px 1px rgb(34, 34, 34),
+                1px -1px 1px rgb(34, 34, 34);
+  font-size: 2.6rem;
+  background-repeat: none;
+  background-size: cover;
+
+}
+
+.app__btn {
+  background-color: #ff8730;
+  padding: 10px 20px;
+  border: 3px solid;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 17px;
+  transition: transform 0.3s;
+}
+
+.app__btn:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
+}
+
+.app__container {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+
+}
+
+.app__text {
+  color: rgb(1, 1, 1);
+  font-weight: 900;
+  font-size: 20px;
+  background-color: rgba(0, 192, 163, 0.877);
+  padding: 10px 20px;
+  border-radius: 15px;
+  width: 60%;
+}
+
+.app__author {
+  color: rgb(42, 42, 42);
+  font-weight: 900;
+  font-size: 15px;
+  margin-bottom: 30px;
+  background-color: rgba(255, 255, 255, 0.668);
+  padding: 10px 20px;
+  border-radius: 20px;
+}
